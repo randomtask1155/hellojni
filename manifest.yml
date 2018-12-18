@@ -1,0 +1,8 @@
+---
+applications:
+- name: hello-jni
+  memory: 1024M
+  instances: 1
+  buildpack: java_buildpack
+  env:
+    JAVA_OPTS: "-Djava.library.path=."
